@@ -1,0 +1,97 @@
+.chat-area {
+    max-width: 400px;
+    background: #fbf8f4;
+    height: 500px;
+    margin: auto;
+    margin-top: 110px;
+    border-radius: 22px;
+    margin-bottom: 100px;
+    -webkit-box-shadow: 1px 11px 51px -9px rgba(0, 0, 0, 0.46);
+    -moz-box-shadow: 1px 11px 51px -9px rgba(0, 0, 0, 0.46);
+    box-shadow: 1px 11px 51px -9px rgba(0, 0, 0, 0.46);
+    position: relative;
+}
+
+.chat-area header {
+    padding: 20px;
+    color: #777;
+    border-bottom: 1px solid #ddd;
+    /*position: absolute;*/
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.chat-area header p {
+    margin: 0
+}
+.chat-area .input-area{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.chat-area #gifs-area{
+    height: 380px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: end;
+     justify-content: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    overflow-y: scroll;
+    box-sizing: content-box;
+    /* z-index: 0; */
+}
+.chat-area .gif{
+    padding: 17px;
+    /*height: 250px;*/
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    background: rgb(54, 215, 183);
+    margin: 10px;
+    border-radius: 13px;
+}
+.chat-area .gif a{
+    margin: 0;
+    padding: 15px;
+    display: block;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.chat-area .gif img{
+    max-width: 250px;
+}
+.chat-area .input-area .loader{
+    margin: auto;
+    width: 20px;
+    top: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+.chat-area .input-area input{
+    border: none;
+    background: #fbf8f4;
+    font-family: "Varela Round", sans-serif;
+    display: block;
+    padding: 20px 40px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 22px;
+    color: rgb(54, 215, 183);
+    font-size: 16px;
+    border-top:1px solid #ddd;
+    width: 100%;
+    /* margin-bottom: 20px; */
+    /*border: 1px solid #ddd;*/
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+/*.input-area input:focus {*/
+    /*outline-offset: none;*/
+/*}*/
+.input-area :focus {
+    outline: none;
+}

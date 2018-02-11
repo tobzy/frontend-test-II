@@ -1,0 +1,9 @@
+@media screen and (max-width: 400px) {
+    .App{
+        padding: 10px;
+    }
+    .chat-area {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
