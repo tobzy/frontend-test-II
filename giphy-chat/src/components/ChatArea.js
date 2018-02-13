@@ -18,7 +18,7 @@ class ChatArea extends Component {
     }
   }
 
-  componentDidUpdate(){
+  componentDidUpdate() {
     document.getElementById("gifs-area").scrollTop = document.getElementById("gifs-area").scrollHeight
   }
 
@@ -28,11 +28,11 @@ class ChatArea extends Component {
     })
   }
 
-  fetchGif(e){
+  fetchGif(e) {
     e.preventDefault()
     this.props.fetchGif(this.state.chatInput)
     this.setState({
-      chatInput:''
+      chatInput: ''
     })
   }
 
@@ -62,7 +62,12 @@ class ChatArea extends Component {
               /></div>
             <form onSubmit={(e) => this.fetchGif(e)}>
               <input type="text" value={this.state.chatInput} onChange={this.changeChatInput.bind(this)}
-                     placeholder="Enter giphy command"/>
+                     placeholder="Enter giphy command"
+                     disabled={this.props.loadingGif}
+              />
+              <button className="send">
+                GO
+              </button>
             </form>
           </section>
         </div>
@@ -77,7 +82,7 @@ const mapStateToProps = (state, ownProps) => {
     infoBoxType: state.infoBox.boxType,
     infoBoxMessage: state.infoBox.message,
     loadingGif: state.loadingBar.loading,
-    gifs:state.gifs.gifChats
+    gifs: state.gifs.gifChats
   }
 };
 

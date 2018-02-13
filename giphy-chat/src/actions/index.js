@@ -14,7 +14,7 @@ export function fetchGif(input) {
   return function (dispatch) {
 
     if(!input.trim().startsWith('/giphy')){
-      dispatch(showInfoBox('Start command with "/giphy"', 'error', 3000))
+      dispatch(showInfoBox('Start command with "/giphy" Eg. /giphy love', 'error', 5000))
       return
     }
     dispatch(showLoading())
