@@ -6,6 +6,12 @@ The purpose of this test is not only to quickly gauge an applicant's abilities w
 
 Applicants may use whatever frontend techniques they want to achieve the outcome.
 
+## Tools Used
+1. React JS Framework
+2. Webpack
+3. Babel
+4. Redux
+
 ## Task
 
 * Using the Spotify API https://developer.spotify.com/web-api/ - Given any particular artist, get their first 10 related artists and list their similar top songs.
